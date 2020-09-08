@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arielle Pfeil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="home/sparkle.png">
+
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">arielle pfeil</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+				<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+				<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+				<li class="nav-item"><a href="photography.html" class="nav-link">Photography</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+ 
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('home/Background_Hexagon.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+		<div class="container">
+		  <div class="row no-gutters slider-text align-items-center justify-content-center">
+			<div class="col-md-9 ftco-animate text-center">
+			  <h1 class="mb-2 bread">Jansen Leg Analysis</h1>
+			  <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="project.html">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>Jansen Leg Analysis <i class="ion-ios-arrow-forward"></i></span></p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+		  
+		  <section class="ftco-section">
+			  <div class="container">
+				  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-10 heading-section ftco-animate">
+				<span class="subheading subheading-with-line"><small class="pr-2 bg-white">ME 370: Mechanical Design I</small></span>
+			  <h2 class="mb-4">Jansen Leg Analysis</h2>
+        
+        <p>
+          UIUC's junior-level design course (ME 370: Mechanical Design I) spends the semester learning about and applying concepts related to planar kinematics, machine dynamics, and structural design.  Due to complications of the COVID-19 pandemic during the Spring 2020 term, the final stages of ME 370’s semester-long design project were replaced with a virtual analysis of an intricate, kinematic mechanism.
+        </p>
+
+        <center>
+          <p>
+            <img src="/projects/Jansen Leg/Strandbeest-Walking-Animation.gif" alt="Jansen Leg Mechanism Animation" height="200">
+            <img src="/projects/Jansen Leg/Strandbeest--Full-Walking-Animation.gif" alt="Strandbeest Mechanism Animation" height="200">
+              </p>
+          </center>
+
+        <p>
+          Many variations of mechanical walkers (or legged robots) exist, including 2-legged (humanoid), 4-legged (quadrupeds), 6-legged (hexapod) and 8-legged (octopod) walkers.  For our virtual analysis, we investigated a 6-legged walker known as a <a href="https://www.strandbeest.com/" class=>Strandbeest</a>, focusing on the individual <a href="https://en.wikipedia.org/wiki/Jansen%27s_linkage" class=>Jansen’s Linkage</a> making up each leg on our walker.  Various stages of the investigation included PVA (position, velocity, and acceleration) analysis and DFA (dynamic force analysis) for the individual leg mechanism in the form of hand calculations and computational analysis with MATLAB.  This analysis came together for a final analysis of the walking robot’s movement and velocity.
+        </p>
+
+        <p>
+          <b>Part 1: Hand Calculations of PVA & DFA of a Single Leg Mechanism</b>
+          <br>The first portion of this project pertained to the symbolic PVA (position, velocity, and acceleration) analysis and DFA (dynamic force analysis) of the Jansen leg mechanism.  This analysis served to understand the motion and forces at the point P of the Jansen Leg which would come in contact with the ground.  From the known link lengths, geometry, and input motion of the crank, the output motion of the point P was symbolically derived.</br>
+        </p>
+
+        <center>
+          <p>
+            <img src="/projects/Jansen Leg/linkage_diagram.jpg" alt="Linkage Diagram" height="325">
+            <img src="/projects/Jansen Leg/linkage_diagram_forces.jpg" alt="Linkage Diagram & Forces" height="325">
+              </p>
+          </center>
+
+        <p>
+          <b>Part 2: Computational Analysis with PVA & DFA of a Single Leg Mechanism</b>
+          <br>Using the theoretical formulas derived in Part 1, a MATLAB script was created and modified to numerically perform PVA analysis and DFA on the mechanism.  The results from this numerical investigation provided values and diagrams displaying the actual motion of the mechanism.  These results would be used for further analysis in Part 3 to estimate the forward velocity of the robot given its inputs.</br>
+        </p>
+
+        <center>
+          <p>
+            <img src="/projects/Jansen Leg/Jansen Leg Mechanism Animation.gif" alt="Mechanism Animation" height="200">
+            <img src="/projects/Jansen Leg/Position.jpg" alt="Position Analysis" height="200">
+            <img src="/projects/Jansen Leg/Velocity.jpg" alt="Velocity Analysis" height="200">
+            <img src="/projects/Jansen Leg/Acceleration.jpg" alt="Acceleration Analysis" height="200">
+
+              </p>
+          </center>
+
+        <p>
+          <b>Part 3: Evaluation of Walking Robot Velocity</b>
+          <br>The results from the investigations performed in Parts 1 and 2 were used to relate the Strandbeest’s velocity to the input crank.  Concepts such as instantaneous centers, locations of maximum torque, and motor functionality requirements (torque vs. angular velocity) were applied.  Several relationships were formed based on the following knowledge and assumptions of the mechanism:</br>
+        </p>
+
+        <ul>
+          <li><b>Gait and Leg Coordination</b>: The Strandbeest is designed so the 6 legs are broken up into 3 pairs. All legs are driven off a single drive shaft, and the robot has a gait where 3 legs touch the ground at any given moment.  Each pair of legs face in opposite directions leading them to be 180 degrees out of phase. The crank shafts of each pair are set 120 degrees off from one another, so each pair of legs is 120 degrees out of phase.</li>
+          <li><b>Weight and Force Distribution</b>: The weight of the Strandbeest is distributed amongst all the legs in contact with the ground at any given moment.  Which and how many feet are in contact with ground at any given moment changes through the gait.  Each foot in contact with the ground has a normal force acting on it.</li>
+          <li><b>Motor and Power Flow</b>:  The Strandbeest’s motor is connected through a gearbox to the drive shaft powering all legs.  Because the speed of the motor is very different from the speed of the legs, a gearbox is needed to transmit and increase/reduce the torque/speed from the motor to each crankshaft.</li>
+        </ul>
+
+        <center>
+          <p>
+            <img src="/projects/Jansen Leg/gait.png" alt="Strandbeest Gait" height="250">
+            <img src="/projects/Jansen Leg/motor_inputs.jpg" alt="Motor Inputs" height="250">
+              </p>
+          </center>
+
+      </div>
+		  </div>	
+		  </section>
+    
+
+<!-- Footer -->		
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <ul class="ftco-footer-social list-unstyled float-md-center float-lft mt-3">
+      <li class="ftco-animate"><a href="https://www.linkedin.com/in/ariellepfeil/"><span class="icon-linkedin"></span></a></li>
+      <li class="ftco-animate"><a href="https://www.facebook.com/ariellepfeil"><span class="icon-facebook"></span></a></li>
+      <li class="ftco-animate"><a href="https://www.instagram.com/arielle.pfeil/"><span class="icon-instagram"></span></a></li>
+      <li class="ftco-animate"><a href="https://github.com/ariellepfeil"><span class="icon-github"></span></a></li>
+      <li class="ftco-animate"><a href="https://open.spotify.com/user/ariellepfeil?si=JP5B3e76SEWFtNsYkqxBdA"><span class="icon-spotify"></span></a></li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+  <p></p>
+  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | All rights reserved</p>
+      </div>
+</div>
+
+  </div>
+</footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
